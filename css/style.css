@@ -255,6 +255,7 @@ strong {
     font-style: normal;
     position: absolute;
     bottom: 0;
+    width:100%;
 }
 
 #banner-lower .main-heading {
