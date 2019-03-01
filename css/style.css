@@ -119,36 +119,33 @@ strong {
     background: url(../img/banner_home_girl.png) no-repeat;
     background-position: 34% 50%;
     position: absolute;
-    bottom: 0px;
+    bottom: -70px;
     height: 100%;
     width: 100%;
     transform: scale(.8);
 }
-
 #home .banner-main {
     background-image: url(../img/banner_home_background.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0% 60%;
-    width: 200%;
+    background-position: 30% 60%;
+    width: 100%;
     height: 100%;
     position: absolute;
-    left: -172px;
+    left: 0;
 }
 
 #about .banner-layer3 {
     background: url(../img/Banner_AboutUs_people.png) no-repeat;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     height: 100%;
+    background-position: 32% 14%;
     width: 100%;
-    background-position: center;
 }
 
 #about .banner-main {
     background-image: url(../img/Banner_AboutUs_background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: 0% 60%;
     width: 100%;
     height: 100%;
@@ -264,7 +261,7 @@ strong {
 
 #banner-lower .sub-heading,
 #banner-lower .sub-heading p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
@@ -613,10 +610,8 @@ strong {
     z-index: -1;
 }
 
-#solutions .main-heading {}
-
 #solutions .sub-heading p {
-    font-size: 24px;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -756,20 +751,17 @@ footer .legal p {
     .nav-item .last {
         margin: 0 0 0 1.5rem;
     }
-
+    
     .dropdown-menu {
         margin-top: 9px;
         background: rgba(255, 255, 255, 0.8);
     }
-
+    #banner-lower .sub-heading, #banner-lower .sub-heading p {
+        font-size: 1.3rem;
+        color: #fff;
+    }
     #home .banner-main {
-        background-image: url(../img/bg-mountains.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0% 60%;
-        width: 100%;
-        height: 100%;
-        position: absolute;
+        background-position: 20% 60%;
         left: 0;
     }
 
@@ -782,6 +774,11 @@ footer .legal p {
         font-size: 1.8rem;
     }
 
+    #banner-lower .sub-heading, #banner-lower .sub-heading p {
+        font-size: 1.3rem;
+        color: #fff;
+    }
+
     #home .banner-layer2 {
         background: url(../img/bg-layer2.png);
         background-repeat: no-repeat;
@@ -792,13 +789,9 @@ footer .legal p {
     }
 
     #home .banner-layer3 {
-        background: url(../img/bg-girl.png) no-repeat;
-        position: absolute;
-        bottom: -160px;
-        left: 10%;
-        height: 100%;
-        width: 100%;
-        transform: scale(1.6);
+        bottom: -20px;
+        left: 2%;
+        transform: scale(1);
     }
 
     #product-link h5,
@@ -841,7 +834,9 @@ footer .legal p {
     .footer-contact div {
         display: inline;
     }
-
+    .banner-main{
+        background-size: 100%;
+    }
     #home .banner-layer2 {
         background-repeat: no-repeat;
         background-position: -421px -722px;
@@ -852,13 +847,15 @@ footer .legal p {
 
     #home .banner-layer3 {
         position: absolute;
-        bottom: -160px;
-        left: 35%;
-        height: 100%;
-        width: 100%;
-        transform: scale(1.6);
+        bottom: -20px;
+        left: 1%;
+        transform: scale(1);
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    #home .banner-layer3 {
+        left: 3%;
+    }
+}
