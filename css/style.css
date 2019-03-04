@@ -30,7 +30,7 @@ h5 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -62,7 +62,9 @@ strong {
 .nav-link {
     font-size: 1.2em;
 }
-
+header{
+    background:#fff;
+}
 .right-bottom-skewbar {
     content: "";
     width: 54em;
@@ -85,7 +87,9 @@ strong {
     top: 0;
     left: -2.9em;
 }
-
+#accordion .card-header{
+    background-color: rgb(var(--dark-green));
+}
 .parallax {
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,7 +188,7 @@ strong {
     bottom: 0px;
     height: 100%;
     width: 100%;
-    background-position: 32% 14%;
+    background-position: 40% 14%;
 
 }
 
@@ -232,12 +236,13 @@ strong {
 }
 
 #banner-upper .main-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 #banner-upper .main-heading span {
     font-size: 3rem;
+    line-height: 1em;
     font-weight: bold;
     display: block;
 }
@@ -658,20 +663,6 @@ footer::after {
     left: -2.9em;
 }
 
-.footer-heading {
-    position: relative;
-}
-
-.footer-heading::before {
-    content: "";
-    background: url(../img/footer-logo.png) no-repeat;
-    background-size: contain;
-    width: 66px;
-    height: 54px;
-    position: absolute;
-    left: -4em;
-}
-
 .footer-heading h5 {
     font-size: 1.38rem;
     font-family: 'LeMondeCourrierStd-Regular', 'Le Monde Courrier Std';
@@ -732,6 +723,7 @@ footer .legal a {
 footer .legal p {
     line-height: .5em;
     color: #fff;
+    font-size:16px;
 }
 
 /* Small or default devices */
@@ -739,12 +731,25 @@ footer .legal p {
     #banner-upper {
         text-align: right;
     }
+    .footer-heading {
+        position: relative;
+    }
+    
+    .footer-heading::before {
+        content: "";
+        background: url(../img/footer-logo.png) no-repeat;
+        background-size: contain;
+        width: 66px;
+        height: 54px;
+        position: absolute;
+        left: -4em;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     h2 {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
 
     #banner-upper .main-heading {
@@ -813,7 +818,7 @@ footer .legal p {
     }
 
     #about .banner-layer3 {
-        background-position: 130% 20%;
+        background-position: 15% 20%;
     }
 
     #products .banner-layer3 {
@@ -822,11 +827,11 @@ footer .legal p {
     }
 
     #services .banner-main {
-        background-position: 0% 60%;
+        background-position: 0% 35%;
     }
 
     #services .banner-layer3 {
-        background-position: 62% 0%;
+        background-position: 15% 0%;
     }
 
     #product-link h5,
@@ -887,6 +892,13 @@ footer .legal p {
         bottom: -20px;
         left: 1%;
         transform: scale(1);
+    }
+    #about .banner-layer3 {
+        background-position: 70% 20%;
+    }
+    #services .banner-layer3 {
+        background-position: 100% 13%;
+
     }
 }
 
