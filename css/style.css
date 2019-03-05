@@ -29,6 +29,11 @@ h5 {
     font-weight: normal;
 }
 
+h1.error-h1{
+    font-size: 120px;
+    font-weight: bold;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -194,6 +199,26 @@ header{
 
 #services .banner-main {
     background-image: url(../img/Banner_Services_background.jpg);
+    background-repeat: no-repeat;
+    background-position: 32% 60%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#error .banner-layer3 {
+    background: url(../img/Banner_404_hand.png) no-repeat;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-size: contain;
+
+}
+
+#error .banner-main {
+    background-image: url(../img/Banner_404_background.jpg);
     background-repeat: no-repeat;
     background-position: 32% 60%;
     width: 100%;
