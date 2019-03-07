@@ -253,7 +253,7 @@ header{
 }
 
 #banner-upper {
-    font-family: 'LeMondeCourrierStd-Regular', 'Le Monde Courrier Std';
+    font-family: lemonde-courrier, serif;
     font-weight: 400;
     font-style: normal;
     text-align: right;
@@ -268,7 +268,8 @@ header{
 #banner-upper .main-heading span {
     font-size: 3rem;
     line-height: 1em;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
     display: block;
 }
 
@@ -298,12 +299,6 @@ header{
     color: #fff;
 }
 
-.solution-nav {
-    position: absolute;
-    bottom: 2px;
-    height: 50px;
-}
-
 .product-tab a {
     background: rgb(var(--bg-color));
     height: 60px;
@@ -312,7 +307,7 @@ header{
     line-height: 60px;
     color: rgb(var(--dark-gray));
     display: block;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 0 0;
 }
 
 #services .product-tab a {
@@ -337,13 +332,11 @@ header{
     line-height: 60px;
     color: #fff;
     display: block;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px 10px 0 0;
 }
-
-#products .service-tab a {
-    border-radius: 10px;
+#services .service-tab a{
+    border-radius: 0 10px 0 0;
 }
-
 #services .service-tab::before {
     content: "";
     width: 0;
@@ -690,8 +683,9 @@ footer::after {
 
 .footer-heading h5 {
     font-size: 1.38rem;
-    font-family: 'LeMondeCourrierStd-Regular', 'Le Monde Courrier Std';
-    font-weight: bold;
+    font-family: lemonde-courrier, serif;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .footer-contact {
@@ -784,7 +778,8 @@ footer .legal p {
 
     #banner-upper .main-heading span {
         font-size: 3.5rem;
-        font-weight: bold;
+        font-style: normal;
+        font-weight: 600;
         display: block;
     }
 
