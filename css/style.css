@@ -42,7 +42,10 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
 }
-
+h3.teal{
+    font-size: 32px;
+    color: rgb(var(--light-green));
+}
 strong {
     font-family: 'SourceSansPro-Semibold', 'Source Sans Pro Semibold', 'Source Sans Pro';
 }
@@ -93,7 +96,37 @@ header{
     left: -2.9em;
 }
 #accordion .card-header{
-    background-color: rgb(var(--dark-green));
+    background-color: #4699a4;
+}
+.card-header h3{
+    position: relative;
+    padding-left:1em;
+}
+.card-header h3::before{
+    content: "\f0d7";
+    top: 0px;
+    left:0px;
+    position: absolute;
+    font-family: "FontAwesome";
+}
+#accordion span[aria-expanded="false"] h3::before {
+    content: "\f0da";
+}
+.toggle {
+    position: relative;
+    padding-right:14px
+}
+
+.toggle::after {
+    content: "\f0d7";
+    top: -2px;
+    right:0px;
+    position: absolute;
+    font-family: "FontAwesome";
+}
+
+.toggle[aria-expanded="true"]::after {
+    content: "\f0da";
 }
 .parallax {
     background-repeat: no-repeat;
@@ -453,17 +486,6 @@ header{
     position: relative;
 }
 
-/* .aboutus-banner::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 30em solid rgba(4, 97, 105, 0.5);
-    border-right: 45em solid transparent;
-    position: absolute;
-    top: 3em;
-    left: -4em;
-} */
-
 .aboutus-btn {
     font-size: 1.4em;
 }
@@ -522,7 +544,7 @@ header{
 }
 
 .employment-legal-content {
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
 }
 
 .work-banner {
@@ -572,13 +594,6 @@ header{
     z-index: -1;
 }
 
-#leadership h3,
-#leadership h5,
-#leadership p,
-#leadership hr {
-    color: #fff !important;
-}
-
 #leadership hr {
     border: 1px solid;
 }
@@ -598,11 +613,6 @@ header{
 
 #leader-info p {
     font-size: 22px;
-}
-
-.howitworks-intro h3 {
-    font-size: 32px;
-    color: rgb(var(--light-green));
 }
 
 .howitworks-intro p {
@@ -720,6 +730,7 @@ footer .footer-social {
 
 footer .footer-social li {
     display: inline-block;
+    margin-left: 10px
 }
 
 footer .footer-social a {
@@ -842,7 +853,7 @@ footer .legal p {
     }
 
     #products .banner-layer3 {
-        background-size: cover;
+        background-size: auto;
         background-position: 32% 14%;
     }
 
