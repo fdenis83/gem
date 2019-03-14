@@ -29,7 +29,7 @@ h5 {
     font-weight: normal;
 }
 
-h1.error-h1{
+h1.error-h1 {
     font-size: 120px;
     font-weight: bold;
 }
@@ -42,12 +42,18 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
 }
-h3.teal{
+
+h3.teal {
     font-size: 32px;
     color: rgb(var(--light-green));
 }
+
 strong {
     font-family: 'SourceSansPro-Semibold', 'Source Sans Pro Semibold', 'Source Sans Pro';
+}
+
+.btn {
+    border: 2px solid;
 }
 
 .btn-orange {
@@ -70,9 +76,40 @@ strong {
 .nav-link {
     font-size: 1.2em;
 }
-header{
-    background:#fff;
+
+header {
+    background: #fff;
 }
+
+main,
+section {
+    position: relative;
+}
+
+main::after {
+    content: "";
+    width: 54em;
+    max-width: 60%;
+    height: 3em;
+    transform: skew(-57deg, 0);
+    background: rgb(var(--dark-green));
+    position: absolute;
+    right: -2.9em;
+    bottom: 0em;
+}
+
+.right-top-skewbar {
+    content: "";
+    width: 54em;
+    max-width: 60%;
+    height: 3em;
+    transform: skew(-57deg, 0);
+    background: rgb(var(--bg-color));
+    position: absolute;
+    top: -3em;
+    right: -2.9em;
+}
+
 .right-bottom-skewbar {
     content: "";
     width: 54em;
@@ -95,32 +132,49 @@ header{
     top: 0;
     left: -2.9em;
 }
-#accordion .card-header{
+
+.left-bottom-skewbar {
+    width: 54em;
+    max-width: 60%;
+    height: 3em;
+    transform: skew(-57deg, 0);
+    background: rgb(var(--bg-color));
+    position: absolute;
+    bottom: -3em;
+    left: -2.9em;
+    z-index: 1;
+}
+
+#accordion .card-header {
     background-color: #4699a4;
 }
-.card-header h3{
+
+.card-header h3 {
     position: relative;
-    padding-left:1em;
+    padding-left: 1em;
 }
-.card-header h3::before{
+
+.card-header h3::before {
     content: "\f0d7";
     top: 0px;
-    left:0px;
+    left: 0px;
     position: absolute;
     font-family: "FontAwesome";
 }
+
 #accordion span[aria-expanded="false"] h3::before {
     content: "\f0da";
 }
+
 .toggle {
     position: relative;
-    padding-right:14px
+    padding-right: 14px
 }
 
 .toggle::after {
     content: "\f0d7";
     top: -2px;
-    right:0px;
+    right: 0px;
     position: absolute;
     font-family: "FontAwesome";
 }
@@ -128,6 +182,7 @@ header{
 .toggle[aria-expanded="true"]::after {
     content: "\f0da";
 }
+
 .parallax {
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +207,21 @@ header{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+    /* IE6-9 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.banner-right-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
     /* IE6-9 */
     width: 100%;
     height: 100%;
@@ -344,7 +414,7 @@ header{
 }
 
 #services .product-tab a {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 #products .product-tab::before {
@@ -367,9 +437,11 @@ header{
     display: block;
     border-radius: 10px 10px 0 0;
 }
-#services .service-tab a{
+
+#services .service-tab a {
     border-radius: 0 10px 0 0;
 }
+
 #services .service-tab::before {
     content: "";
     width: 0;
@@ -406,8 +478,9 @@ header{
 .sale-list li::before {
     position: absolute;
     content: "\f054";
-    font-size: 1em;
+    font-size: 0.7em;
     font-family: FontAwesome;
+    top: 20px;
     left: -20px;
     color: rgb(var(--fire-orange));
 }
@@ -486,12 +559,13 @@ header{
     position: relative;
 }
 
-.aboutus-btn {
+.green-btn {
     font-size: 1.4em;
 }
 
-.aboutus-btn:hover {
+.green-btn:hover {
     background: rgba(var(--light-green));
+    color: white;
 }
 
 #about-heading {
@@ -512,28 +586,6 @@ header{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 0% 5%;
-}
-
-#employment::before {
-    content: "";
-    background: rgba(var(--dark-red), 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-#employment::after {
-    content: "";
-    width: 54em;
-    max-width: 60%;
-    height: 3em;
-    transform: skew(-57deg, 0);
-    background: rgb(var(--dark-gray));
-    position: absolute;
-    top: 0;
-    left: -2.9em;
 }
 
 .employment-legal-title,
@@ -679,18 +731,6 @@ footer {
     position: relative;
 }
 
-footer::after {
-    content: "";
-    width: 54em;
-    max-width: 60%;
-    height: 3em;
-    transform: skew(-57deg, 0);
-    background: rgb(var(--bg-color));
-    position: absolute;
-    top: -1px;
-    left: -2.9em;
-}
-
 .footer-heading h5 {
     font-size: 1.38rem;
     font-family: lemonde-courrier, serif;
@@ -753,7 +793,7 @@ footer .legal a {
 footer .legal p {
     line-height: .5em;
     color: #fff;
-    font-size:16px;
+    font-size: 16px;
 }
 
 /* Small or default devices */
@@ -761,10 +801,11 @@ footer .legal p {
     #banner-upper {
         text-align: right;
     }
+
     .footer-heading {
         position: relative;
     }
-    
+
     .footer-heading::before {
         content: "";
         background: url(../img/footer-logo.png) no-repeat;
@@ -814,7 +855,7 @@ footer .legal p {
     }
 
     #home .banner-main {
-        background-position: 20% 60%;
+        background-position: 20% 40%;
         left: 0;
     }
 
@@ -853,7 +894,7 @@ footer .legal p {
     }
 
     #products .banner-layer3 {
-        background-size: auto;
+        background-size: cover;
         background-position: 32% 14%;
     }
 
@@ -924,9 +965,11 @@ footer .legal p {
         left: 1%;
         transform: scale(1);
     }
+
     #about .banner-layer3 {
         background-position: 70% 20%;
     }
+
     #services .banner-layer3 {
         background-position: 100% 13%;
 
