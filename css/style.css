@@ -92,6 +92,7 @@ section {
 
 main {
     background: rgb(var(--bg-color));
+    overflow: hidden;
 }
 
 main::after {
