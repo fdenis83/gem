@@ -85,9 +85,11 @@ main,
 section {
     position: relative;
 }
-main{
+
+main {
     background: rgb(var(--bg-color));
 }
+
 main::after {
     content: "";
     width: 54em;
@@ -754,11 +756,12 @@ footer .footer-social li {
 footer .footer-social a {
     background: rgb(var(--light-green));
     border-radius: 50%;
-    width: 1.5em;
+    width: 1.6em;
     color: white;
-    height: 1.5em;
+    height: 1.6em;
     display: inline-block;
     text-align: center;
+    line-height: 1.7em;
 }
 
 footer .legal,
