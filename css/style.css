@@ -56,6 +56,10 @@ strong {
     border: 2px solid;
 }
 
+a.btn:hover {
+    color: #fff;
+}
+
 .btn-orange {
     color: #fff;
     background-color: rgb(var(--fire-orange));
@@ -202,7 +206,7 @@ main::after {
     width: 100%;
 }
 
-.banner-gradient {
+.left-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6-15 */
@@ -217,13 +221,13 @@ main::after {
     position: absolute;
 }
 
-.banner-right-gradient {
+.right-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
     /* IE6-9 */
@@ -568,7 +572,7 @@ main::after {
 }
 
 .green-btn:hover {
-    background: rgba(var(--light-green));
+    background: rgba(var(--fire-orange));
     color: white;
 }
 
@@ -586,7 +590,7 @@ main::after {
     position: relative;
     overflow: hidden;
     /* The image used */
-    background-image: url(../img/Work_For_Us_Orlando.jpg);
+    background-image: url(../img/AboutUs_FortLauderdale.jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 0% 5%;
