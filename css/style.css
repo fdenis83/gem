@@ -10,7 +10,7 @@
 
 body {
     font-family: 'SourceSansPro-Regular', 'Source Sans Pro' !important;
-    background: rgb(var(--bg-color));
+    background: rgb(var(--dark-green));
 }
 
 p {
@@ -85,7 +85,9 @@ main,
 section {
     position: relative;
 }
-
+main{
+    background: rgb(var(--bg-color));
+}
 main::after {
     content: "";
     width: 54em;
@@ -291,7 +293,7 @@ main::after {
 }
 
 #services .banner-layer3 {
-    background: url(../img/Banner_Services_girl.png) no-repeat;
+    background: url(../img/Banner_Services_couple.png) no-repeat;
     position: absolute;
     bottom: 0px;
     height: 100%;
@@ -631,7 +633,6 @@ main::after {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -2;
 }
 
 .honeycomb-bg::after {
@@ -643,11 +644,11 @@ main::after {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
 }
 
 #leadership hr {
     border: 1px solid;
+    position: relative
 }
 
 #leadership img {
@@ -673,29 +674,6 @@ main::after {
 
 #solutions {
     position: relative;
-}
-
-#solutions::before {
-    content: "";
-    background-color: rgb(var(--dark-gray));
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -2;
-}
-
-#solutions::after {
-    content: "";
-    background-image: url(../img/honeycomb_pattern.svg);
-    opacity: 0.05;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
 }
 
 #solutions .sub-heading p {
@@ -814,6 +792,7 @@ footer .legal p {
         height: 54px;
         position: absolute;
         left: -4em;
+        top: -1em;
     }
 }
 
@@ -971,7 +950,7 @@ footer .legal p {
     }
 
     #services .banner-layer3 {
-        background-position: 100% 13%;
+        background-position: 0% 13%;
 
     }
 }
