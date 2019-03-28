@@ -6,6 +6,7 @@
     --dark-gray: 29, 37, 44;
     --fire-orange: 231, 79, 61;
     --dark-red: 231, 79, 61;
+    --btn-red: 203,55,39;
 }
 
 body {
@@ -163,7 +164,7 @@ main::after {
 .red-overlay {
     width: 100%;
     height: 100%;
-    background: rgba(var(--fire-orange), 0.5);
+    background: rgba(var(--fire-orange), 0.7);
     position: absolute;
 }
 
@@ -244,7 +245,7 @@ main::after {
 
 #home .banner-layer3 {
     background: url(../img/banner_home_girl.png) no-repeat;
-    background-position: 34% 50%;
+    background-position: 34% 12%;
     position: absolute;
     bottom: -70px;
     height: 100%;
@@ -255,7 +256,7 @@ main::after {
 #home .banner-main {
     background-image: url(../img/banner_home_background.png);
     background-repeat: no-repeat;
-    background-position: 30% 60%;
+    background-position: 30% 10%;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -301,7 +302,7 @@ main::after {
 }
 
 #services .banner-layer3 {
-    background: url(../img/Banner_Services_couple.png) no-repeat;
+    background: url(../img/Banner_Services_couple_v2.png) no-repeat;
     position: absolute;
     bottom: 0px;
     height: 100%;
@@ -311,7 +312,7 @@ main::after {
 }
 
 #services .banner-main {
-    background-image: url(../img/Banner_Services_background.jpg);
+    background-image: url(../img/Banner_Services_background_v2.jpg);
     background-repeat: no-repeat;
     background-position: 32% 60%;
     width: 100%;
@@ -545,7 +546,7 @@ main::after {
 
 #aboutus::before {
     content: "";
-    background: rgba(var(--light-green), 0.5);
+    background: rgba(var(--dark-green), 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -574,8 +575,19 @@ main::after {
 }
 
 .green-btn:hover {
-    background: rgba(var(--fire-orange));
+    background: rgba(var(--light-green));
     color: white;
+    border: 0;
+}
+
+.red-btn {
+    font-size: 1.4em;
+}
+
+.red-btn:hover {
+    background: rgba(var(--btn-red));
+    color: white;
+    border: 0;
 }
 
 #about-heading {
@@ -959,7 +971,7 @@ footer .legal p {
     }
 
     #services .banner-layer3 {
-        background-position: 0% 13%;
+        background-position: 100% 13%;
 
     }
 }
