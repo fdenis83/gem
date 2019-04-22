@@ -185,7 +185,7 @@ main::after {
     width: 100%;
     height: 100%;
     background: rgba(231, 79, 61, 0.7);
-    background: rgba(var(--fire-orange), 0.7);
+    background: rgba(var(--fire-orange), 0.8);
     position: absolute;
 }
 
@@ -426,6 +426,7 @@ main::after {
 
 #banner-lower .main-heading {
     padding-bottom: 1rem;
+    font-size: 1.6rem;
 }
 
 #banner-lower .sub-heading,
@@ -616,7 +617,7 @@ main::after {
     background: rgb(97, 176, 188);
     background: rgb(var(--light-green));
     color: white;
-    border: 0;
+    border-color: rgb(97, 176, 188);
 }
 
 .red-btn {
@@ -711,8 +712,7 @@ main::after {
 }
 
 #leadership hr {
-    border: 1px solid;
-    position: relative
+    background: #fff;
 }
 
 #leadership img {

@@ -7,13 +7,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="http://gemax.io/favicon.png" />
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/bih4qsy.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function (h, e, a, t, m, p) {
+            m = e.createElement(a);
+            m.async = !0;
+            m.src = t;
+            p = e.getElementsByTagName(a)[0];
+            p.parentNode.insertBefore(m, p);
+        })(window, document, 'script', 'https://u.heatmap.it/log.js');
+    </script>
 
 </head>
 
@@ -21,10 +33,13 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137043322-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-137043322-1');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137043322-1');
 </script>
 <!--- End of Google Analytics Code -->
 
@@ -37,8 +52,9 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="img/gem_logo.png" width="130px" alt="">
                         </a>
-                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-                            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="nav justify-content-end collapse navbar-collapse" id="collapsibleNavId">
@@ -104,7 +120,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div id="results" class="row py-3 justify-content-center">
-                        <div id="result" class="col-md-6">
+                        <div id="result" class="col-md-6 order-2 order-md-1">
                             <h4 class="heading">Deliver better results through accelerated velocity</h4>
                             <ul class="sale-list">
                                 <li>Integrate customizable technical solutions</li>
@@ -112,7 +128,7 @@
                                 <li>Transform team operations with a guest experience outlook</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 order-1 order-md-2">
                             <img src="img/Speed_graphic.svg" alt="results symbol" class="img-fluid" width="384px">
                         </div>
                     </div>
@@ -120,7 +136,8 @@
                     <div id="strategy" class="container py-3">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="img/Strategy_graphic.svg" alt="Strategies Symbol" class="img-fluid" width="389px">
+                                <img src="img/Strategy_graphic.svg" alt="Strategies Symbol" class="img-fluid"
+                                    width="389px">
                             </div>
                             <div class="col-md-6">
                                 <h4 class="heading">Build strategies that work for you and your brand</h4>
@@ -177,16 +194,18 @@
                             <div class="col-sm-12 col-md-3 text-center pr-md-0">
                                 <a href="products.html" class="text-white">
                                     <div id="product-link" class="solution-category py-4">
-                                        <img src="img/Home_products.svg" alt="soluion icon" width="104px" class="d-none d-md-block mx-auto">
-                                        <h5 class="pt-2">Products</h5>
+                                        <img src="img/Home_products.svg" alt="soluion icon" width="104px"
+                                            class="d-none d-md-block mx-auto">
+                                        <h5 class="py-3 px-4">Products</h5>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-sm-12 col-md-3 text-center pl-md-0">
                                 <a href="services.html" class="text-white">
                                     <div id="service-link" class="solution-category py-4">
-                                        <img src="img/Home_services.svg" alt="soluion icon" width="104px" class="d-none d-md-block mx-auto">
-                                        <h5 class="pt-2">Services</h5>
+                                        <img src="img/Home_services.svg" alt="soluion icon" width="104px"
+                                            class="d-none d-md-block mx-auto">
+                                        <h5 class="py-3 px-4">Services</h5>
                                     </div>
                                 </a>
                             </div>
@@ -216,16 +235,16 @@
                     <div class="col-md-3 d-flex align-items-center justify-content-center mb-5">
                         <img class="img-fluid" src="img/nbcuni-logo.png" alt="" width="183px">
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mb-5">
                         <img class="img-fluid" src="img/marriot-logo.png" alt="" width="182px">
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mb-5">
                         <img class="img-fluid" src="img/hologic-logo.png" alt="" width="166px">
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mb-5">
                         <img class="img-fluid" src="img/floridahospital-logo.png" alt="" width="192px">
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mb-5">
                         <img class="img-fluid" src="img/hardrock-logo.png" alt="" width="141px">
                     </div>
                 </div>
@@ -239,7 +258,8 @@
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="footer-heading col mt-1 mt-md-5 ml-md-5 media">
-                            <img class="mr-3 d-block d-sm-none" src="img/footer-logo.png" alt="footer logo" width="66px">
+                            <img class="mr-3 d-block d-sm-none" src="img/footer-logo.png" alt="footer logo"
+                                width="66px">
                             <h5>
                                 Maximize Your Guest Experience
                             </h5>
@@ -247,7 +267,9 @@
                     </div>
                     <div class="row mt-3">
                         <div class="footer-contact col text-center text-md-left">
-                            <div>Start a conversation.</div> Email us at contact@GEMax.io
+                            <div>Start a conversation.</div> Email us at <a
+                                style="color: #ffffff; text-decoration: none;"
+                                href="mailto:contact@gemax.io?subject=GEM%20Inquiry">contact@GEMax.io</a>
                         </div>
                     </div>
                 </div>
@@ -265,14 +287,16 @@
                         <div class="col">
                             <ul class="footer-social">
                                 <li>
-                                    <a href="https://twitter.com/GEMx_io"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="https://twitter.com/GEMx_io"><i class="fa fa-twitter"
+                                            aria-hidden="true"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/company/gemx-io/about/"><i class="fa fa-linkedin"
                                             aria-hidden="true"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.facebook.com/GEMx.io/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/GEMax.io/"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -280,7 +304,8 @@
                     <div class="row">
                         <div class="legal col">
                             <p>&copy; 2019 GEM. All Rights Reserved.</p>
-                            <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="disclaimer.html">Disclaimer</a></p>
+                            <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a
+                                    href="disclaimer.html">Disclaimer</a></p>
                         </div>
                     </div>
                 </div>
@@ -289,12 +314,14 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
